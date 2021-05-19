@@ -4,17 +4,26 @@ package se.kth.integration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
+
 /**
  * testing that DatabaseNotFoundException is thrown when it should
  */
 class DatabaseNotFoundExceptionTest {
 
     @Test
-    public void getTestCheckInventoryJunit3() {
+    public void getTestCheckInventoryThrowsDataBaseFailureExceptionJunit3Style() {
         ExternalInventorySystem eis = new ExternalInventorySystem();
-        Integer ItemId = 420;
+        Integer itemId = 420;
         Integer wantedAmount = 5;
-
+        try {
+            eis.checkInventory(itemId, wantedAmount);
+            fail("Missed exception");
+        }
+        catch (DatabaseFailureException | ItemNotFoundException e) {
+            assertEquals("database connection timed out", e.getMessage());
+        }
     }
 
 
@@ -26,12 +35,6 @@ class DatabaseNotFoundExceptionTest {
         Throwable exception = Assertions.assertThrows(DatabaseFailureException.class, () -> {
             eis.checkInventory(itemId, wantedAmount);
         });
-        Assertions.assertTrue(exception.getMessage().equals("database connection timed out"));
+        Assertions.assertEquals(exception.getMessage(), "database connection timed out");
     }
-
-    @Test
-    public void testCheckInventory
-
-
-
 }
