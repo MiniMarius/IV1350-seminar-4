@@ -37,7 +37,7 @@ class ItemNotFoundExceptionTest {
     }
 
     /**
-     * testing that a checked NullPointerException is thrown when null is given as parameter
+     * testing that a unchecked NullPointerException is thrown when null is given as parameter
      *
      */
     @Test

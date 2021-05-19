@@ -13,7 +13,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -57,7 +57,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -101,7 +101,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -145,7 +145,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -189,7 +189,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -233,7 +233,7 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>
@@ -277,7 +277,95 @@
   <thread>1</thread>
   <message>database connection timed out</message>
   <exception>
-    <message>se.kth.integration.DatabaseFailureException: database connection timed out</message>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
+    <frame>
+      <class>se.kth.integration.ExternalInventorySystem</class>
+      <method>checkInventory</method>
+      <line>34</line>
+    </frame>
+    <frame>
+      <class>se.kth.controller.Controller</class>
+      <method>enterItem</method>
+      <line>44</line>
+    </frame>
+    <frame>
+      <class>se.kth.view.View</class>
+      <method>showSaleInfo</method>
+      <line>61</line>
+    </frame>
+    <frame>
+      <class>se.kth.view.View</class>
+      <method>sampleExecution</method>
+      <line>40</line>
+    </frame>
+    <frame>
+      <class>se.kth.startup.Main</class>
+      <method>main</method>
+      <line>25</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-19T13:54:32.786705Z</date>
+  <millis>1621432472786</millis>
+  <nanos>705000</nanos>
+  <sequence>0</sequence>
+  <logger>se.kth.view.View</logger>
+  <level>SEVERE</level>
+  <class>se.kth.view.View</class>
+  <method>logException</method>
+  <thread>1</thread>
+  <message>database connection timed out</message>
+  <exception>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
+    <frame>
+      <class>se.kth.integration.ExternalInventorySystem</class>
+      <method>checkInventory</method>
+      <line>34</line>
+    </frame>
+    <frame>
+      <class>se.kth.controller.Controller</class>
+      <method>enterItem</method>
+      <line>44</line>
+    </frame>
+    <frame>
+      <class>se.kth.view.View</class>
+      <method>showSaleInfo</method>
+      <line>61</line>
+    </frame>
+    <frame>
+      <class>se.kth.view.View</class>
+      <method>sampleExecution</method>
+      <line>40</line>
+    </frame>
+    <frame>
+      <class>se.kth.startup.Main</class>
+      <method>main</method>
+      <line>25</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-05-19T14:40:48.261819Z</date>
+  <millis>1621435248261</millis>
+  <nanos>819000</nanos>
+  <sequence>0</sequence>
+  <logger>se.kth.view.View</logger>
+  <level>SEVERE</level>
+  <class>se.kth.view.View</class>
+  <method>logException</method>
+  <thread>1</thread>
+  <message>database connection timed out</message>
+  <exception>
+    <message>se.kth.integration.DatabaseNotFoundException: database connection timed out</message>
     <frame>
       <class>se.kth.integration.ExternalInventorySystem</class>
       <method>checkInventory</method>

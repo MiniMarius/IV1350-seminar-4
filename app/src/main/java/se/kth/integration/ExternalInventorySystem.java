@@ -27,11 +27,11 @@ public class ExternalInventorySystem {
      * @param itemId the id which match with item in stock
      * @return foundItem a copy of found item in stock with the wanted amount inside
      * @throws ItemNotFoundException    if no id is matched with searched id
-     * @throws DatabaseFailureException if id is equal to 420
+     * @throws DatabaseNotFoundException if id is equal to 420
      */
-    public Item checkInventory(Integer itemId, Integer wantedAmount) throws ItemNotFoundException, DatabaseFailureException {
+    public Item checkInventory(Integer itemId, Integer wantedAmount) throws ItemNotFoundException, DatabaseNotFoundException {
         if (itemId == 420) {
-            throw new DatabaseFailureException("database connection timed out");
+            throw new DatabaseNotFoundException("database connection timed out");
         }
         for (Item item : itemsInStock) {
             if (item.getStoreKeepingUnitNumber().equals(itemId) && item.getAmount() >= wantedAmount) {

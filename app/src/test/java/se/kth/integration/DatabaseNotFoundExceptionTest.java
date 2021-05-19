@@ -25,7 +25,7 @@ class DatabaseNotFoundExceptionTest {
             eis.checkInventory(itemId, wantedAmount);
             fail("Missed exception");
         }
-        catch (DatabaseFailureException | ItemNotFoundException e) {
+        catch (DatabaseNotFoundException | ItemNotFoundException e) {
             assertEquals("database connection timed out", e.getMessage());
         }
     }
@@ -38,7 +38,7 @@ class DatabaseNotFoundExceptionTest {
         ExternalInventorySystem eis = new ExternalInventorySystem();
         Integer itemId = 420;
         Integer wantedAmount = 2;
-        Throwable exception = Assertions.assertThrows(DatabaseFailureException.class, () -> {
+        Throwable exception = Assertions.assertThrows(DatabaseNotFoundException.class, () -> {
             eis.checkInventory(itemId, wantedAmount);
         });
         Assertions.assertEquals(exception.getMessage(), "database connection timed out");

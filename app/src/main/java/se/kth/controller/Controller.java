@@ -40,7 +40,7 @@ public class Controller {
      * @param itemId        the id of the item we are looking for in inventory system
      * @param amountOfItems The amount of said item we are looking for
      */
-    public Sale enterItem(Integer itemId, Integer amountOfItems) throws ItemNotFoundException, DatabaseFailureException {
+    public Sale enterItem(Integer itemId, Integer amountOfItems) throws ItemNotFoundException, DatabaseNotFoundException {
         Item searchedItem = externalInventorySystem.checkInventory(itemId, amountOfItems);
         sale.addItem(searchedItem);
         sale.updateRunningTotal();

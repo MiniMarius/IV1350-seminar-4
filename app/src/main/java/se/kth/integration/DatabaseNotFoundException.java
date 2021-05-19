@@ -1,13 +1,13 @@
 package se.kth.integration;
 
-public class DatabaseFailureException extends Exception {
+public class DatabaseNotFoundException extends Exception {
 
     /**
      * Creates a new DataBaseNotFoundException
      *
      * @param message the detailed message to show
      */
-    public DatabaseFailureException(String message) {
+    public DatabaseNotFoundException(String message) {
         super(message);
     }
 
@@ -17,7 +17,7 @@ public class DatabaseFailureException extends Exception {
      * @param message   the detailed message to show
      * @param throwable the exception to chain with
      */
-    public DatabaseFailureException(String message, Throwable throwable) {
+    public DatabaseNotFoundException(String message, Throwable throwable) {
         super(message, throwable);
     }
 }
