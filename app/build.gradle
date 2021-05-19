@@ -34,5 +34,12 @@ application {
 
 tasks.named('test') {
     // Use junit platform for unit tests.
+    outputs.upToDateWhen {false}
     useJUnitPlatform()
+
+}
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
