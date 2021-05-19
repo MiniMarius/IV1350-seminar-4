@@ -12,6 +12,10 @@ import static org.junit.jupiter.api.Assertions.fail;
  */
 class DatabaseNotFoundExceptionTest {
 
+    /**
+     * checks that DataBaseFailureException is thrown when the itemId is equal to the
+     * hardcoded throwing Integer 420. Done in junit3 style.
+     */
     @Test
     public void getTestCheckInventoryThrowsDataBaseFailureExceptionJunit3Style() {
         ExternalInventorySystem eis = new ExternalInventorySystem();
@@ -26,7 +30,9 @@ class DatabaseNotFoundExceptionTest {
         }
     }
 
-
+    /**
+     * same as above but junit5 style
+     */
     @Test
     public void testCheckInventoryThrowsDatabaseNotFoundException() {
         ExternalInventorySystem eis = new ExternalInventorySystem();
