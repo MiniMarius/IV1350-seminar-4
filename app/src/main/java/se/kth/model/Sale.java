@@ -134,7 +134,7 @@ public class Sale {
     /**
      * adds observers to the list of sale observers
      *
-     * @param observerList
+     * @param observerList the list of observers to add to list of observers
      */
     public void addObservers(List<SaleObserver> observerList) {
         saleObservers.addAll(observerList);

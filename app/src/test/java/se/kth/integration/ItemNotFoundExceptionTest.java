@@ -37,13 +37,14 @@ class ItemNotFoundExceptionTest {
     }
 
     /**
-     * testing that an exception is thrown when null is given as parameter
+     * testing that a checked NullPointerException is thrown when null is given as parameter
+     *
      */
     @Test
     public void testCheckInventoryWhenAmountIsNull() {
         Integer itemId = 3;
         Integer wantedAmount = null;
         ExternalInventorySystem eis = new ExternalInventorySystem();
-        Assertions.assertThrows(Exception.class, () -> eis.checkInventory(itemId, wantedAmount));
+        Assertions.assertThrows(NullPointerException.class, () -> eis.checkInventory(itemId, wantedAmount));
     }
 }
