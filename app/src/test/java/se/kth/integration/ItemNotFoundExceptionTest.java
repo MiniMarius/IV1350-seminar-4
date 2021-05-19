@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import se.kth.model.Item;
 
+/**
+ * testing that ItemNotFoundException is thrown when it should
+ */
 class ItemNotFoundExceptionTest {
 
     @Test
